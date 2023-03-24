@@ -1,0 +1,205 @@
+body {
+  background: radial-gradient(rgb(225, 238, 246) 0%, rgb(70, 161, 232) 100%);
+}
+
+#search-engine {
+  position: absolute;
+  top: 30px;
+  box-shadow: 2px 5px 5px lightgrey;
+  margin: 0 auto;
+  text-align: center;
+  left: auto;
+  right: auto;
+  border-radius: 10px;
+}
+
+#button-addon2 {
+  border-radius: 10px;
+  border-color: grey;
+  width: 100px;
+  position: absolute;
+  top: 75px;
+  background-color: rgb(231, 146, 1);
+  color: white;
+  box-shadow: 2px 5px 5px lightgrey;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+}
+
+#button-addon2:hover {
+  background-color: rgb(57, 123, 198);
+  transition: 200ms ease-in-out;
+}
+
+h1 {
+  font-weight: bold;
+  position: relative;
+  top: 30px;
+  left: 15px;
+  text-shadow: 2px 5px 5px lightgrey;
+}
+
+h3 {
+  font-size: 15px;
+  position: relative;
+  top: 22px;
+  left: 15px;
+  text-shadow: 2px 5px 5px lightgrey;
+  margin-bottom: -35px;
+}
+
+.mostly-cloudy {
+  font-size: 18px;
+  position: relative;
+  left: 150px;
+  top: -35px;
+  text-shadow: 2px 5px 5px lightgrey;
+  text-align: center;
+}
+
+.small-numbers {
+  font-size: 15px;
+  position: relative;
+  left: 130px;
+  top: -50px;
+  color: rgb(239, 237, 237);
+  text-shadow: 2px 5px 2px black;
+}
+
+.big-number {
+  font-size: 70px;
+  position: relative;
+  top: -125px;
+  left: 20px;
+  color: white;
+  text-shadow: 2px 5px 2px black;
+}
+
+.small-letters {
+  font-size: 20px;
+}
+
+.list {
+  list-style: none;
+  font-size: 13px;
+  position: relative;
+  left: 350px;
+  top: -220px;
+  color: white;
+  text-shadow: 2px 5px 2px black;
+}
+
+.image {
+  border-radius: 10px;
+  height: 350px;
+  border: 2px black;
+  box-shadow: 2px 5px 5px lightgrey;
+}
+
+.weather-card {
+  position: relative;
+  top: -200px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px grey;
+}
+
+.body-card {
+  height: 575px;
+  width: 525px;
+  box-shadow: 2px 5px 10px grey;
+  margin: auto;
+  position: relative;
+  top: 100px;
+  border-radius: 20px;
+}
+
+.first {
+  font-size: 25px;
+  text-shadow: 1px 3px 3px lightgrey;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: black;
+  opacity: 0.8;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+
+.weather-forecast-temperature-minimum {
+  opacity: 0.5;
+}
+
+#weather-icon {
+  position: relative;
+  top: 15px;
+  left: 380px;
+  margin-bottom: -200px;
+}
+
+#description {
+  position: relative;
+  top: 175px;
+  left: 30px;
+  color: rgb(249, 246, 246);
+  text-transform: capitalize;
+}
+
+#celsius-conversion {
+  text-decoration: none;
+  color: white;
+}
+
+#fahrenheit-conversion {
+  text-decoration: none;
+  color: white;
+}
+
+#position-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  position: relative;
+  top: 150px;
+  border-radius: 20px;
+  box-shadow: 2px 5px 2px lightgrey;
+}
+
+#position-button:hover {
+  background-color: rgb(231, 146, 1);
+  color: white;
+}
+
+#title {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  position: relative;
+  top: -340px;
+  color: rgb(207, 207, 207);
+  text-shadow: 1px 3px 3px rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#forecast {
+  position: relative;
+  top: -200px;
+}
+
+#git-link {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 300px;
+  left: 40px;
+  text-shadow: 2px 5px 5px grey;
+  font-size: 20px;
+}
