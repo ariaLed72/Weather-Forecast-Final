@@ -146,16 +146,16 @@ h3 {
 
 #weather-icon {
   position: relative;
-  width: 170px;
+  width: 150px;
   top: 15px;
-  left: 365px;
+  left: 195px;
   margin-bottom: -200px;
 }
 
 #description {
   position: relative;
   top: 175px;
-  left: 30px;
+  left: -145px;
   color: rgb(249, 246, 246);
   text-transform: capitalize;
 }
