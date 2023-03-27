@@ -67,7 +67,7 @@ function displayForecast(response) {
       ${formatDay(forecastDay.time)}
       </div>
 
-      <img class="forecast-icon" src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
+      <img id="forecast-icon"  class="icon" src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
         forecastDay.condition.icon
       }.png" 
       alt=${forecastDay.condition.description}
@@ -111,6 +111,9 @@ function search(event) {
 let fahrenheitTemperature = null;
 
 function changeTemp(response) {
+  let cityName = document.querySelector("#city-name");
+  cityName.innerHTML = response.data.city;
+
   let wholeTemp = document.querySelector("#big-temp");
   fahrenheitTemperature = Math.round(response.data.temperature.current);
   let temperature = Math.round(response.data.temperature.current);
@@ -170,16 +173,18 @@ celsiusLink.addEventListener("click", showCelsiusTemp);
 let fahrenheitLink = document.querySelector("#fahrenheit-conversion");
 fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
-//function showPosition(response) {
-// let lat = response.data.coordinates.latitude;
-// let lon = response.data.coordinates.longitude;
-//let apiUrlPosition = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=imperial`;
-//axios.get(apiUrlPosition).then(changeTemp);
-//}
+function showPosition(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiUrlPosition = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=imperial`;
+  console.log(apiUrlPosition);
+  axios.get(apiUrlPosition).then(changeTemp);
+}
 
-//function getCurrentPosition(position) {
-//// navigator.geolocation.getCurrentPosition(showPosition);
-//}
+function getCurrentPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
 
-//let button = document.querySelector("#position-button");
-//button.addEventListener("click", getCurrentPosition);
+let button = document.querySelector("#position-button");
+button.addEventListener("click", getCurrentPosition);
